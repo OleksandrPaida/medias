@@ -14,6 +14,13 @@ module.exports = {
         backgroundColor: "#F5F5F8",
       },
     },
+    screens: {
+      "2xl": { max: "1535px" },
+      xl: { max: "1400px" },
+      lg: { max: "903px" },
+      md: { max: "767px" },
+      sm: { max: "639px" },
+    },
   },
   plugins: [],
 };

@@ -5,7 +5,7 @@ import { cardsData } from "../data/cardsData";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col gap-20 bg-backgroundColor h-fit items-center py-[80px] px-[84px]">
+    <div className="flex flex-col gap-20 bg-backgroundColor h-fit items-center py-[80px]">
       <Head>
         <title>Medias</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,13 +18,13 @@ const Home: NextPage = () => {
           rel="stylesheet"
         ></link>
       </Head>
-      <div className="w-[730px] text-center">
+      <div className="w-[730px] md:w-[500px] text-center">
         <h1 className="text-[56px] font-bold tracking-[-0.01em] text-DarkBlue leading-[55px]">
           We make creative media that{" "}
           <b className="text-Blue font-bold ">adds value</b>
         </h1>
       </div>
-      <div className="grid grid-cols-3 gap-y-10 gap-x-[30px]">
+      <div className="grid grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 gap-y-10 gap-x-[30px]">
         {cardsData.length &&
           cardsData.map((card) => (
             <Card

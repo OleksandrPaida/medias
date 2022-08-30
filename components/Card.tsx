@@ -40,10 +40,10 @@ const Card = ({ title, list, description, images }: CardItem) => {
               </li>
             ))}
         </ul>
-        <p className="text-[15px] font-semibold leading-[24px]">
+        <div className="text-[15px] font-semibold leading-[24px]">
           {description.length > 0 &&
-            description.map((item) => <div>{item}</div>)}
-        </p>
+            description.map((item) => <p key={item}>{item}</p>)}
+        </div>
       </div>
     </div>
   );
